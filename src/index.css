@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f1e9ff;
+  --panel: #fbfbfb;
+  --card: #ffffff;
+  --soft: #edf0f5;
+  --soft-2: #f7f7f9;
+  --line: #ececf4;
+  --ink: #2b2a3d;
+  --muted: #74728b;
+  --brand-soft: #f2ebff;
+  --sun-soft: #fdf2d4;
+  --coral-soft: #fdebe5;
+  --aqua-soft: #e3f8fc;
+  --banner: #fdedc9;
+  --banner-ink: #7a4a12;
+  --banner-muted: #8a6a3a;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #151226;
+  --panel: #1e1b33;
+  --card: #242140;
+  --soft: #2a2748;
+  --soft-2: #221f3a;
+  --line: #353152;
+  --ink: #f2f0fb;
+  --muted: #a6a2c0;
+  --brand-soft: #33275c;
+  --sun-soft: #3a321d;
+  --coral-soft: #3a2722;
+  --aqua-soft: #1d333a;
+  --banner: #3a2f1c;
+  --banner-ink: #f7d9a0;
+  --banner-muted: #d6bb8e;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-bg text-ink antialiased;
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, 'Segoe UI', sans-serif;
+  font-size: 13px;
+}
+
+::selection {
+  background: #d9c8ff;
+  color: #2b1a5e;
+}
+
+:focus-visible {
+  outline: 2px solid #7c41f5;
+  outline-offset: 2px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

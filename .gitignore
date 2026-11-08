@@ -1,0 +1,26 @@
+﻿# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+api/config.php
+
+# Database backups and dumps
+*.sql
+*.sql.gz
+*.bak
+*.old
+*.orig
+*.save
+*.log
+
+# Local development
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

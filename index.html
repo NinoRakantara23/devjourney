@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DevJourney adalah dashboard personal untuk mengelola proyek, tugas, milestone, roadmap, dan catatan perjalanan belajar."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f1e9ff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151226" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="DevJourney — Personal Learning & Project Management" />
+    <meta
+      property="og:description"
+      content="Dashboard personal untuk proyek, tugas, milestone, roadmap, dan perjalanan belajar."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <title>DevJourney — Personal Learning & Project Management</title>
+    <script>
+      try {
+        var t = localStorage.getItem('dj-theme');
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
